@@ -1,0 +1,135 @@
+/* Your app's CSS, go crazy, make it your own */
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+.details {
+    padding: 0px 12px 20px 12px;
+}
+
+.details img {
+    float: left;
+    margin-right: 12px;
+}
+
+.list {
+    clear: both;
+}
+
+.login {
+	display: table-cell;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid;
+    border-color: #b2b2b2;
+    background-image: linear-gradient(0deg, #b2b2b2, #b2b2b2 50%, transparent 50%);
+    color: #444;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+form i.icon.error {
+  color: #ef4e3a;
+}
+
+form input + i.icon.error {
+  display: none;
+  margin-left: 8px;
+}
+
+form.ng-submitted input.ng-invalid + i.icon.error {
+  display: block;
+}
+
+form .has-error {
+  border-left: 5px solid #cc2511;
+}
+
+form .has-success {
+  border-left: 5px solid #3d8b3d;
+}
+
+form.ng-submitted input.ng-valid + i.icon.error {
+  display: none;
+}
+
+.gridStyle {
+    height: 280px;
+    width: 400px;
+    margin:0 auto;
+}
+
+.autoCompCard {
+  margin: 20px 10px;
+  border-radius: 2px;
+  background-color: #fff;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+ .autoCard-input {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  position: relative;
+  border-color: #ddd;
+  border-width: 1px;
+  border-style: solid;
+  padding: 6px 0 5px 8px; }
+  .autoCard-input input {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 220px;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 220px;
+    -ms-flex: 1 0 220px;
+    flex: 1 0 220px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    padding-right: 24px;
+    background-color: transparent; }
+  .autoCard-input .button .icon {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 24px;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 24px;
+    -ms-flex: 0 0 24px;
+    flex: 0 0 24px;
+    position: static;
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    font-size: 16px; }
+  .autoCard-input .button-bar {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 220px;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 220px;
+    -ms-flex: 1 0 220px;
+    flex: 1 0 220px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+  .autoCard-input .icon {
+    min-width: 14px;
+}

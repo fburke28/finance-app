@@ -1,0 +1,50 @@
+<ion-view title="Companies" left-buttons="leftButtons" right-buttons="logoutButton">
+
+  <ion-content has-header="true">
+
+	<div class="list autoCompCard">
+	  <label class="autoCard-input">
+	    <i class="icon ion-search placeholder-icon"></i>
+	    <angucomplete id="symbolSelector" placeholder="Search symbols" pause="100" selectedobject="selectedSymbol" localdata="symbols"
+	          searchfields="symbol" titlefield="symbol" minlength="1"
+	          inputclass="form-control form-control-small" matchclass="highlight" />
+	  </label>
+	</div>
+
+	<div class="list card" ng-show="selectedSymbol">
+	  <div class="item item-avatar">
+	    <img ng-src="img/{{trackerImg}}" />
+	    <h2>Symbol: {{company.symbol}}</h2>
+	    <p>Sector: {{company.sector}}</p>
+	    <p>Price: {{company.price}}, Daily Change: {{company.change}}</p>
+	    <p>User Rating: {{stockRating.stockRating}}</p>
+	  </div>
+
+	  <div id="main" class="item item-body">
+	    <div class="gridStyle" ng-grid="gridOptions">
+        </div>
+
+	    <p class="subdued">
+	      <b>System Rating:</b> {{company.systemRating}}
+	    </p>
+	    <p class="subdued">
+	      <b>Updated:</b> {{company.updateTmstmp}}
+	    </p>
+	  </div>
+
+	  <div class="item tabs tabs-secondary tabs-icon-left">
+	    <a class="tab-item" ng-click="showRatingsPopup()">
+	      <i class="icon ion-thumbsup"></i>
+	      Rate
+	    </a>
+	    <a class="tab-item" ng-click="showRatingsCommentPopup()">
+	      <i class="icon ion-chatbox"></i>
+	      Comment
+	    </a>
+	  </div>
+
+	</div>
+
+  </ion-content>
+
+</ion-view>

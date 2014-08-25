@@ -1,0 +1,42 @@
+<ion-side-menus>
+
+    <ion-pane ion-side-menu-content>
+        <ion-nav-bar type="bar-balanced"
+               back-button-type="button-icon"
+               back-button-icon="ion-ios7-arrow-back"></ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-pane>
+
+    <ion-side-menu side="left">
+        <header class="bar bar-header bar-balanced">
+          <div class="title">{{account.userName}} - {{account.userRating}}/100 rating</div>
+        </header>
+        <ion-content has-header="true">
+          <div class="item item-divider">Social</div>
+          <ul class="list">
+            <a class="item item-icon-left" href="#/menu/companies">
+			  <i class="icon ion-android-add-contact"></i>
+			  Account
+			</a>
+			<a class="item item-icon-left" href="#/menu/companies">
+			  <i class="icon ion-thumbsup"></i>
+			  Your Ratings
+			</a>
+			<a class="item item-icon-left" href="#/menu/companies">
+			  <i class="icon ion-android-friends"></i>
+			  Users
+			</a>
+			<div class="item item-divider">Stock</div>
+			<a class="item item-icon-left" href="#/menu/companies">
+			  <i class="icon ion-android-note"></i>
+			  Companies
+			</a>
+			<a class="item item-icon-left" href="#/menu/companies">
+			  <i class="icon ion-android-mixer"></i>
+			  System Recs
+			</a>
+          </ul>
+        </ion-content>
+    </ion-side-menu>
+
+</ion-side-menus>
